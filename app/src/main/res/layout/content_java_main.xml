@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainConstraint"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/holo_blue_light"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".JavaMainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:showIn="@layout/activity_java_main">
+
+    <LinearLayout
+        android:id="@+id/ExList"
+        android:layout_width="395dp"
+        android:layout_height="587dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@android:color/holo_blue_dark"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ExName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="120dp"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:textSize="25dp"
+                    tools:text="Should Press" />
+
+                <TextView
+                    android:id="@+id/ExMuscle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:textSize="20dp"
+                    tools:text="Shoulder" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="406dp"
+                android:layout_height="46dp"
+                android:background="@android:color/holo_blue_dark"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ExSets"
+                    android:layout_width="33dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1"
+                    android:text="Sets : " />
+
+                <EditText
+                    android:id="@+id/ExSetNum"
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="#"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:id="@+id/ExReps"
+                    android:layout_width="28dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Reps : " />
+
+                <EditText
+                    android:id="@+id/ExRepNum"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="#"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:id="@+id/ExDem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:autoLink="web"
+                    android:text="TextView"
+                    tools:text="Demonstration" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
